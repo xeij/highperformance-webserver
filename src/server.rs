@@ -1,10 +1,9 @@
-use crate::{Response, Result, Router, ServerError};
+use crate::{Result, Router, ServerError};
 use hyper::service::{make_service_fn, service_fn};
 use hyper::{Body, Request, Server as HyperServer};
 use std::convert::Infallible;
 use std::net::SocketAddr;
 use std::sync::Arc;
-use tokio::net::TcpListener;
 use tracing::{error, info, warn};
 
 pub struct Server {

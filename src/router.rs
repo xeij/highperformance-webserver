@@ -1,6 +1,5 @@
 use crate::{Handler, HandlerFn, Response, Result, ServerError};
 use hyper::{Body, Method as HttpMethod, Request};
-use std::collections::HashMap;
 use std::future::Future;
 use std::pin::Pin;
 
